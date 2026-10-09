@@ -1,19 +1,26 @@
 # PR-fotos-
 
-Este site foi configurado como uma galeria de fotos simples em HTML/CSS.
+Este site foi configurado como uma galeria de fotos com preço fixo de R$ 10,00 por imagem.
 
-Como visualizar:
-- Abra o arquivo `index.html` no navegador, ou
-- Publique o repositório no GitHub Pages para deixar o site online.
+Estrutura do projeto:
+- `index.html`: página principal com a galeria
+- `styles.css`: layout e estilos da página
+- `images/`: pasta para receber as fotos do catálogo
 
-Como personalizar:
-- Troque as imagens na página `index.html`
-- Ajuste as cores, tamanhos e layout em `styles.css`
-- Adicione mais fotos copiando o bloco de `article.photo-card`
+Como usar:
+- Adicione as imagens dentro da pasta `images/` com os nomes:
+  - `foto-1.jpg`
+  - `foto-2.jpg`
+  - `foto-3.jpg`
+  - `foto-4.jpg`
+  - `foto-5.jpg`
+  - `foto-6.jpg`
 
-Se quiser, posso também transformar este modelo em uma página com:
-- galeria em grid responsivo
-- modal para ampliar as fotos
-- botão de download
-- upload de fotos locais
-- tema claro/escuro
+Para visualizar:
+- Abra o arquivo `index.html` no navegador.
+
+Se quiser, posso continuar e transformar o botão "Comprar" em:
+- WhatsApp
+- pagamento via cartão
+- compra por e-mail
+- modal de confirmação
