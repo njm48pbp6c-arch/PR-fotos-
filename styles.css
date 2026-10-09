@@ -7,6 +7,7 @@
   --accent: #f97316;
   --accent-soft: #fdba74;
   --shadow: rgba(15, 23, 42, 0.35);
+  --price-color: #10b981;
 }
 
 * {
@@ -175,6 +176,14 @@ nav a {
   overflow: hidden;
   border: 1px solid rgba(148, 163, 184, 0.2);
   box-shadow: 0 18px 32px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px var(--shadow);
 }
 
 .photo-card img {
@@ -183,7 +192,10 @@ nav a {
 }
 
 .caption {
-  padding: 18px 18px 22px;
+  padding: 18px 18px 12px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .caption h3 {
@@ -192,8 +204,32 @@ nav a {
 }
 
 .caption p {
-  margin: 0;
+  margin: 0 0 12px;
   color: var(--muted);
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--price-color);
+  margin-bottom: 12px;
+}
+
+.btn-comprar {
+  margin: 0 18px 18px;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-comprar:hover {
+  background: #ea580c;
+  transform: scale(1.02);
 }
 
 .about-box {
